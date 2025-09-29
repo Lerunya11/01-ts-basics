@@ -1,9 +1,8 @@
-// Задача 2. Интерфейсы
-
+// Task 2 — interfaces
 interface Product {
-  readonly id: number; // только для чтения
+  readonly id: number;
   title: string;
-  description?: string; // необязательное поле
+  description?: string;
 }
 
 const product: Product = {
@@ -12,6 +11,7 @@ const product: Product = {
   description: 'Compact and fast',
 };
 
-console.log(`Product: ${JSON.stringify(product)}`);
+console.log('Task 2:');
+console.log('Product:', JSON.stringify(product));
 
 export {};

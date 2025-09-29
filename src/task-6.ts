@@ -1,19 +1,16 @@
-// Задача 6. Обобщённые типы (Generics)
-
+// Task 6 — generics
 function getFirstElement<T>(arr: T[]): T | undefined {
   return arr[0];
 }
 
-// Явные дженерики в вызовах:
-const n = getFirstElement<number>([1, 2, 3]); // number | undefined
-const s = getFirstElement<string>(['a', 'b', 'c']); // string | undefined
-const b = getFirstElement<boolean>([true, false, true]); // boolean | undefined
+const n = getFirstElement<number>([1, 2, 3]);
+const s = getFirstElement<string>(['a', 'b', 'c']);
+const b = getFirstElement<boolean>([true, false, true]);
 
+console.log('Task 6:');
 console.log(n, s, b);
 
-// Смешанный массив без объединённого типа — ошибка:
-// const bad = getFirstElement([1, 'a']);
-// Корректный способ:
+// const bad = getFirstElement([1, 'a']); // ошибка TS
 // const ok = getFirstElement<number | string>([1, 'a']);
 
 export {};

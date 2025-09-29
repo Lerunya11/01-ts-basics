@@ -1,6 +1,5 @@
-// Задача 8. HTTP-запросы (axios)
-// Установка: npm i axios
-
+// Task 8 — axios HTTP
+// Убедись, что установлено: npm i axios
 import axios from 'axios';
 
 interface Post {
@@ -14,6 +13,7 @@ async function fetchPosts(): Promise<Post[]> {
   return response.data;
 }
 
+console.log('Task 8:');
 fetchPosts().then((posts) => {
   console.log(posts[0]?.title);
 });

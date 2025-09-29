@@ -1,5 +1,4 @@
-// Задача 5. Union Type
-
+// Task 5 — union type
 type Status = 'loading' | 'success' | 'error';
 
 function logStatus(status: Status): void {
@@ -12,8 +11,8 @@ function logStatus(status: Status): void {
   }
 }
 
+console.log('Task 5:');
 logStatus('loading');
-// Пример недопустимого вызова — вызовет ошибку TS:
-// logStatus('idle');
+// logStatus('idle'); // ← специально недопустимо
 
 export {};

@@ -1,11 +1,11 @@
-// Задача 1. Типизация скалярных значений
-
+// Task 1 — scalar types
 const name: string = 'Alice';
 const age: number = 30;
 const isOnline: boolean = true;
 
-console.log(`Name: ${name}`);
-console.log(`Age: ${age}`);
-console.log(`Online: ${isOnline}`);
+console.log('Task 1:');
+console.log('Name:', name);
+console.log('Age:', age);
+console.log('Online:', isOnline);
 
 export {};
